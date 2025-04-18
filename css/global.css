@@ -318,21 +318,21 @@ li {
 @font-face {
   font-display: swap;
   font-family: ArialMT;
-  src: local("ArialMT"), url("./fonts/ArialMT.woff2") format("woff2");
+  src: local("ArialMT"), url("../fonts/ArialMT.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-display: swap;
   font-family: Montserrat;
-  src: local("Montserrat-Regular"), url("./fonts/Montserrat-Regular.woff2") format("woff2");
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-display: swap;
   font-family: Montserrat;
-  src: local("Montserrat-ExtraBold"), url("./fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  src: local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
