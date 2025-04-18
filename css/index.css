@@ -2172,6 +2172,9 @@
     padding: 0 15px 22px;
     max-height: 3500px;
   }
+  .services .accordion__content {
+    padding: 0 15px;
+  }
   .services .accordion__content-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
