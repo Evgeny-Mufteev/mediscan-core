@@ -1,0 +1,1 @@
+{"version":3,"sources":["sprite.scss","sprite.css"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,WAAA;EACA,gBAAA;ACCF","file":"sprite.css","sourcesContent":[".breadcrumb-icon {\n  width: 4px;\n  height: 7px;\n  margin-left: 8px;\n}\n",".breadcrumb-icon {\n  width: 4px;\n  height: 7px;\n  margin-left: 8px;\n}"]}
