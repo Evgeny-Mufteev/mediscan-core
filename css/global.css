@@ -318,21 +318,21 @@ li {
 @font-face {
   font-display: swap;
   font-family: ArialMT;
-  src: local("ArialMT"), url("../fonts/ArialMT.woff2") format("woff2");
+  src: local("ArialMT"), url("./fonts/ArialMT.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-display: swap;
   font-family: Montserrat;
-  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  src: local("Montserrat-Regular"), url("./fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-display: swap;
   font-family: Montserrat;
-  src: local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  src: local("Montserrat-ExtraBold"), url("./fonts/Montserrat-ExtraBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -396,6 +396,9 @@ input::-webkit-inner-spin-button {
   -webkit-column-gap: 8px;
   -moz-column-gap: 8px;
   column-gap: 8px;
+  white-space: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 .breadcrumbs__link {
   font-family: ArialMT;
@@ -436,6 +439,9 @@ input::-webkit-inner-spin-button {
     font-size: 30px;
     line-height: 30px;
   }
+  .breadcrumbs {
+    margin-bottom: 23px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -447,6 +453,12 @@ input::-webkit-inner-spin-button {
   .section-title {
     font-size: 24px;
     line-height: 29px;
+  }
+  .breadcrumbs {
+    margin-bottom: 28px;
+  }
+  .breadcrumbs__link {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=global.css.map */
