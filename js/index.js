@@ -149,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".specialists__nav-next",
       prevEl: ".specialists__nav-prev"
     },
+    watchSlidesProgress: true,
     breakpoints: {
       320: {
         slidesPerView: 1.4,

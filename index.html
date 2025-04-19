@@ -26,8 +26,6 @@
   <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
 </head>
 
-
-
 <body>
   <div class="wrapper">
     <header class="header">
@@ -688,7 +686,7 @@
                         <p class="specialists__item-experience">Стаж работы:</p>
                         <p class="specialists__item-category">Более 26 лет, высшая категория.</p>
                         <button class="specialists__item-btn js-open-modal" data-target="#appointment-modal"
-                          role="button" aria-label="Записаться к Ашариной Алле Анатольевне">
+                          role="button" aria-label="Записаться к Ашариной Алле Анатольевне" type="button">
                           Записаться
                         </button>
                       </div>
@@ -706,7 +704,7 @@
                         <p class="specialists__item-experience">Стаж работы:</p>
                         <p class="specialists__item-category">Более 20 лет, высшая категория.</p>
                         <button class="specialists__item-btn js-open-modal" data-target="#appointment-modal"
-                          role="button" aria-label="Записаться к Сироткину Алексею Анатольевичу">
+                          role="button" aria-label="Записаться к Сироткину Алексею Анатольевичу" type="button">
                           Записаться
                         </button>
                       </div>
@@ -724,7 +722,7 @@
                         <p class="specialists__item-experience">Стаж работы:</p>
                         <p class="specialists__item-category">Более 9 лет</p>
                         <button class="specialists__item-btn js-open-modal" data-target="#appointment-modal"
-                          role="button" aria-label="Записаться к Бахчуриной Римме Александровне">
+                          role="button" aria-label="Записаться к Бахчуриной Римме Александровне" type="button">
                           Записаться
                         </button>
                       </div>
@@ -742,7 +740,7 @@
                         <p class="specialists__item-experience">Стаж работы:</p>
                         <p class="specialists__item-category">Более 9 лет</p>
                         <button class="specialists__item-btn js-open-modal" data-target="#appointment-modal"
-                          role="button" aria-label="Записаться к Бахчуриной Римме Александровне">
+                          role="button" aria-label="Записаться к Бахчуриной Римме Александровне" type="button">
                           Записаться
                         </button>
                       </div>
@@ -819,46 +817,47 @@
 </footer>
 
     <div class="overlay"></div>
-  </div>
 
-  <div class="modal js-modal" id="appointment-modal" role="dialog" aria-modal="true"
-    aria-labelledby="appointment-modal-title" aria-describedby="appointment-modal-subtitle">
-    <div class="modal__content" role="document">
-      <button type="button" class="modal__close js-modal-close" aria-label="Закрыть диалоговое окно">
-        <svg class="close" aria-hidden="true">
-          <use href="./assets/svg/sprite.svg#close"></use>
-        </svg>
-      </button>
-      <header class="modal__header" role="banner" aria-labelledby="appointment-modal-title appointment-modal-subtitle">
-        <h2 class="modal__title" id="appointment-modal-title">Записаться</h2>
-        <p class="modal__subtitle" id="appointment-modal-subtitle">
-          Оставьте свои контактные данные, и наш специалист свяжется в ближайшее время
-        </p>
-      </header>
-      <form class="modal__form js-form" id="modal-form" role="form" aria-labelledby="appointment-modal-title" novalidate
-        autocomplete="on">
-        <div class="modal__field" role="group" aria-labelledby="modal-name-label">
-          <label for="modal-name" id="modal-name-label">Имя</label>
-          <input type="text" name="name" id="modal-name" placeholder="Ваше имя" autocomplete="name" required
-            aria-required="true" data-pristine-required-message="Введите ваше имя" />
-        </div>
-        <div class="modal__field" role="group" aria-labelledby="modal-phone-label">
-          <label for="modal-phone" id="modal-phone-label">Телефон</label>
-          <input type="tel" name="phone" id="modal-phone" placeholder="+7 (999) 999 99-99" autocomplete="tel" required
-            aria-required="true" data-pristine-required-message="Введите номер телефона" />
-        </div>
-        <p class="modal__policy">
-          Нажимая на кнопку, вы даете согласие на
-          <a href="javascript:void(0);" target="_blank" rel="noopener noreferrer"
-            aria-label="Обработка персональных данных, откроется в новой вкладке">
-            обработку своих персональных данных
-          </a>
-        </p>
-        <footer class="modal__footer" role="contentinfo">
-          <button type="submit" class="modal__btn" aria-label="Записаться">Записаться</button>
-          <input type="hidden" name="form-name" value="Модальное окно: Записаться" />
-        </footer>
-      </form>
+    <div class="modal js-modal" id="appointment-modal" role="dialog" aria-modal="true"
+      aria-labelledby="appointment-modal-title" aria-describedby="appointment-modal-subtitle">
+      <div class="modal__content" role="document">
+        <button type="button" class="modal__close js-modal-close" aria-label="Закрыть диалоговое окно">
+          <svg class="close" aria-hidden="true">
+            <use href="./assets/svg/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <header class="modal__header" role="banner"
+          aria-labelledby="appointment-modal-title appointment-modal-subtitle">
+          <h2 class="modal__title" id="appointment-modal-title">Записаться</h2>
+          <p class="modal__subtitle" id="appointment-modal-subtitle">
+            Оставьте свои контактные данные, и наш специалист свяжется в ближайшее время
+          </p>
+        </header>
+        <form class="modal__form js-form" id="modal-form" role="form" aria-labelledby="appointment-modal-title"
+          novalidate autocomplete="on">
+          <div class="modal__field" role="group" aria-labelledby="modal-name-label">
+            <label for="modal-name" id="modal-name-label">Имя</label>
+            <input type="text" name="name" id="modal-name" placeholder="Ваше имя" autocomplete="name" required
+              aria-required="true" data-pristine-required-message="Введите ваше имя" />
+          </div>
+          <div class="modal__field" role="group" aria-labelledby="modal-phone-label">
+            <label for="modal-phone" id="modal-phone-label">Телефон</label>
+            <input type="tel" name="phone" id="modal-phone" placeholder="+7 (999) 999 99-99" autocomplete="tel" required
+              aria-required="true" data-pristine-required-message="Введите номер телефона" />
+          </div>
+          <p class="modal__policy">
+            Нажимая на кнопку, вы даете согласие на
+            <a href="javascript:void(0);" target="_blank" rel="noopener noreferrer"
+              aria-label="Обработка персональных данных, откроется в новой вкладке">
+              обработку своих персональных данных
+            </a>
+          </p>
+          <footer class="modal__footer" role="contentinfo">
+            <button type="submit" class="modal__btn" aria-label="Записаться">Записаться</button>
+            <input type="hidden" name="form-name" value="Модальное окно: Записаться" />
+          </footer>
+        </form>
+      </div>
     </div>
   </div>
 
