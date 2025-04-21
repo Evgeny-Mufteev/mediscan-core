@@ -507,6 +507,9 @@
   background: #f9f9f9;
   padding: 7.5px 20px;
 }
+.wrapper .licenses__btn:hover {
+  background: #ffe2da;
+}
 .wrapper .licenses__img {
   display: none;
 }
