@@ -109,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   var gallerySlider = new Swiper(".gallery__slider", {
-    loop: true,
     pagination: {
       el: ".gallery__pagination",
       clickable: true,
@@ -117,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return "<span class=\"".concat(className, "\"></span>");
       }
     },
+    watchSlidesProgress: true,
     navigation: {
       nextEl: ".gallery__nav-next",
       prevEl: ".gallery__nav-prev"
@@ -189,6 +189,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }, "Введите корректный номер телефона");
     }
 
+    var specialistNameInput = form.querySelector('input[name="specialist_name"]');
+    var appointmentButtons = document.querySelectorAll(".js-open-modal");
+    appointmentButtons.forEach(function (button) {
+      button.addEventListener("click", function (e) {
+        var specialistName = e.target.getAttribute("data-specialist-name");
+
+        if (specialistNameInput) {
+          specialistNameInput.value = specialistName;
+        }
+      });
+    });
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var valid = pristine.validate();

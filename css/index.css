@@ -115,7 +115,7 @@
   border-radius: 25px;
   padding: 25px 25px 30px 25px;
 }
-.wrapper .about__block-title {
+.wrapper .about__block h3 {
   margin-bottom: 15px;
   font-family: Montserrat;
   font-weight: 700;
@@ -124,14 +124,7 @@
   color: var(--main-color);
   text-transform: uppercase;
 }
-.wrapper .about__block-title._warn {
-  text-transform: unset;
-  margin-top: 30px;
-  margin-bottom: 0;
-  line-height: 20px;
-  color: var(--orange-color);
-}
-.wrapper .about__block-title span {
+.wrapper .about__block h3 span {
   font-family: ArialMT;
   font-weight: 400;
   font-size: 16px;
@@ -139,14 +132,25 @@
   color: var(--main-color);
   text-transform: lowercase;
 }
-.wrapper .about__block-list {
+.wrapper .about__block p {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: unset;
+  margin-top: 30px;
+  margin-bottom: 0;
+  line-height: 20px;
+  color: var(--orange-color);
+}
+.wrapper .about__block ul {
   margin-bottom: 25px;
   margin-left: 25px;
 }
-.wrapper .about__block-list:last-child {
+.wrapper .about__block ul:last-child {
   margin-bottom: 0;
 }
-.wrapper .about__block-item {
+.wrapper .about__block li {
   font-family: ArialMT;
   font-weight: 400;
   font-size: 16px;
@@ -157,7 +161,7 @@
   list-style-position: outside;
   padding-left: 5px;
 }
-.wrapper .about__block-item:last-child {
+.wrapper .about__block li:last-child {
   margin-bottom: 0;
 }
 .wrapper .services {
@@ -1650,20 +1654,20 @@
   .wrapper .about__blocks {
     padding: 25px 25px 27px 25px;
   }
-  .wrapper .about__block-title {
+  .wrapper .about__block h3 {
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 15px;
   }
-  .wrapper .about__block-title._warn {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .wrapper .about__block-title span {
+  .wrapper .about__block h3 span {
     font-size: 14px;
     line-height: 100%;
   }
-  .wrapper .about__block-item {
+  .wrapper .about__block p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .wrapper .about__block li {
     font-size: 14px;
     padding-left: 0px;
   }
@@ -2136,24 +2140,24 @@
     margin-top: 12px;
     padding: 20px 12px 20px;
   }
-  .wrapper .about__block-title {
+  .wrapper .about__block h3 {
     font-size: 12px;
     line-height: 15px;
     margin-bottom: 12px;
   }
-  .wrapper .about__block-title._warn {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .wrapper .about__block-title span {
+  .wrapper .about__block h3 span {
     font-size: 12px;
     line-height: 14px;
   }
-  .wrapper .about__block-list {
+  .wrapper .about__block p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .wrapper .about__block ul {
     margin-bottom: 20px;
     margin-left: 21px;
   }
-  .wrapper .about__block-item {
+  .wrapper .about__block li {
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 6px;
@@ -2411,10 +2415,10 @@
     margin-top: 15px;
   }
   .wrapper .feedback__form {
-    row-gap: 10px;
+    row-gap: 25px;
   }
   .wrapper .feedback__fields {
-    gap: 10px;
+    gap: 25px;
   }
   .wrapper .feedback__field {
     width: 100%;
@@ -2594,7 +2598,7 @@
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: end;
-    gap: 10px;
+    gap: 25px;
   }
   .wrapper .recording__btn {
     padding: 7px 20px;
